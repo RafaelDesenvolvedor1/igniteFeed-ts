@@ -1,4 +1,5 @@
 {
+  "homepage": "https://RafaelDesenvolvedor1.github.io/igniteFeed-ts",
   "name": "ignitefeed-ts",
   "private": true,
   "version": "0.0.0",
@@ -7,13 +8,16 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "date-fns": "^3.6.0",
-    "phosphor-react": "^1.4.1"
+    "gh-pages": "^6.2.0",
+    "phosphor-react": "^1.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
